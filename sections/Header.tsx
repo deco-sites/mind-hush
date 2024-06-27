@@ -47,9 +47,9 @@ export default function Header({
       <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
       {/* main content */}
-      <div class="drawer-content container lg:px-0 px-4 flex gap-8 items-center justify-between py-4">
+      <div class="drawer-content container md:max-w-6xl lg:mx-auto px-4 flex gap-8 items-center justify-between py-4">
         <a href="/">
-          <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
+          <img src="logo.webp" width={100} height={28} alt={logo.alt} />
         </a>
 
         <div class="hidden items-center justify-between lg:flex w-full">
@@ -92,7 +92,7 @@ export default function Header({
       </div>
 
       {/* sidebar */}
-      <aside class="drawer-side z-50">
+      <aside class="drawer-side z-50 overflow-hidden">
         {/* Close when clicking on overlay */}
         <label
           htmlFor="mobile-drawer-nav"

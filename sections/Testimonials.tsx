@@ -85,17 +85,6 @@ const DEFAULT_PROPS = {
         position: "Position, Company name",
       },
     },
-    {
-      content: {
-        description:
-          "Showcase customer feedback that emphasizes your product or service's key features and addresses prospective clients' concerns. Display endorsements from customer groups that mirror your target audience.",
-        avatar:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e",
-        alt: "Avatar",
-        name: "Name Surname",
-        position: "Position, Company name",
-      },
-    },
   ],
 };
 
@@ -133,33 +122,20 @@ function SliderItem(
 
 function Dots({ slides, interval = 0 }: Props) {
   return (
-    <>
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-          @property --dot-progress {
-            syntax: '<percentage>';
-            inherits: false;
-            initial-value: 0%;
-          }
-          `,
-        }}
-      />
-      <ul class="carousel col-span-full gap-3 z-10">
-        {slides?.map((_, index) => (
-          <li class="carousel-item">
-            <Slider.Dot index={index}>
-              <div class="py-5">
-                <div
-                  class="w-2 h-2 rounded-full group-disabled:animate-progress dot"
-                  style={{ animationDuration: `${interval}s` }}
-                />
-              </div>
-            </Slider.Dot>
-          </li>
-        ))}
-      </ul>
-    </>
+    <ul class="carousel col-span-full gap-3 z-10">
+      {slides?.map((_, index) => (
+        <li class="carousel-item">
+          <Slider.Dot index={index}>
+            <div class="py-5">
+              <div
+                class="w-2 h-2 rounded-full group-disabled:animate-progress group-disabled:bg-black dot"
+                style={{ animationDuration: `${interval}s` }}
+              />
+            </div>
+          </Slider.Dot>
+        </li>
+      ))}
+    </ul>
   );
 }
 
@@ -197,7 +173,7 @@ function Carousel(props: Props) {
   return (
     <div
       id={id}
-      class="min-h-min flex flex-col lg:container md:max-w-6xl lg:mx-auto mx-4 py-12 lg:py-28"
+      class="min-h-min flex flex-col lg:container md:max-w-6xl lg:mx-auto px-4 py-12 lg:py-28"
     >
       <h2 class="text-4xl leading-snug lg:w-1/2 pb-12 lg:pb-16">
         {title}
@@ -211,7 +187,7 @@ function Carousel(props: Props) {
         {slides?.map((slide, index) => (
           <Slider.Item
             index={index}
-            class="carousel-item max-w-[600px] w-full"
+            class="carousel-item max-w-lg w-full"
           >
             <SliderItem
               slide={slide}
@@ -221,8 +197,8 @@ function Carousel(props: Props) {
         ))}
       </Slider>
 
-      <div class="flex justify-between pt-8 lg:px-16">
-        {props.dots && <Dots slides={slides} interval={interval} />}{" "}
+      <div class="flex justify-between pt-8 px-2">
+        {props.dots && <Dots slides={slides} interval={interval} />}
         {props.arrows && <Buttons />}
       </div>
     </div>

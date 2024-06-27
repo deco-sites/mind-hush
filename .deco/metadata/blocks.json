@@ -100,5 +100,13 @@
   "/.deco/blocks/Footer.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Footer.tsx"
+  },
+  "/.deco/blocks/PrincipalHero.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/ParagraphWithPhoneMockup.tsx"
+  },
+  "/.deco/blocks/deco-records.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/deco/records.ts"
   }
 }

@@ -6,27 +6,28 @@
       "__resolveType": "Header"
     },
     {
-      "__resolveType": "site/sections/Hero.tsx",
-      "title": "<h1>MindHush</h1>",
-      "cta": [],
-      "description": "Save your mind.",
-      "placement": "right"
+      "__resolveType": "site/sections/Animation/Animation.tsx",
+      "animationType": "fade-in",
+      "children": {
+        "section": {
+          "__resolveType": "PrincipalHero"
+        }
+      },
+      "duration": "0.4"
     },
     {
       "__resolveType": "site/sections/ImageWithParagraph.tsx"
     },
     {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx",
-      "placement": "right"
-    },
-    {
-      "__resolveType": "site/sections/Testimonials.tsx"
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "dots": true,
+      "arrows": true
     },
     {
       "__resolveType": "site/sections/Faq.tsx"
     },
     {
-      "__resolveType": "Footer"
+      "__resolveType": "site/sections/FloatbarFooter.tsx"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

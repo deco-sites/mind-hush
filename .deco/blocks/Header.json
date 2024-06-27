@@ -1,1 +1,30 @@
-{"__resolveType":"site/sections/Header.tsx","navigation":{"links":[],"buttons":[]}}
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "url": "#"
+      },
+      {
+        "label": "Features",
+        "url": "#"
+      },
+      {
+        "label": "Testimonials",
+        "url": "#"
+      },
+      {
+        "label": "Faq",
+        "url": "#"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Download Now",
+        "href": "#",
+        "outline": true
+      }
+    ]
+  }
+}

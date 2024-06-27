@@ -1,0 +1,21 @@
+{
+  "__resolveType": "site/sections/ParagraphWithPhoneMockup.tsx",
+  "cta": [
+    {
+      "style": "Outline",
+      "href": "#",
+      "text": "Quero fazer parte"
+    },
+    {
+      "style": "Ghost",
+      "href": "#",
+      "text": "Aprofunde-se"
+    }
+  ],
+  "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
+  "title": "SaveYourMind - An Application that makes your mind happy",
+  "image": {
+    "source": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10911/6514d6bf-111a-4d97-9506-c2159c9a16c3",
+    "description": "Description"
+  }
+}
